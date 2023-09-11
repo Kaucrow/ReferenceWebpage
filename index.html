@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="favicons/Kaucrow.png">
     <title>Reference Webpage</title>
 </head>
@@ -24,7 +28,7 @@
     <a href="mailto:test@fake.com">
         Email test@fake.com
     </a>
-    <hr>
+    <br style="line-height: 4;">
 
     <!-- IMAGES AND GIFs-->
     <h2>Images and GIFs</h2>
@@ -41,7 +45,7 @@
     <img src="gifs/Matrix.gif"
     alt="This is the Matrix"
     height="150" width="150">
-    <hr>
+    <br style="line-height: 4;">
 
     <!-- AUDIO and VIDEO -->
     <h2 style="margin-bottom: 5px;">Audio and Video</h2>
@@ -54,7 +58,7 @@
         <source src="audio/Drifting.mp3" type="audio/mp3">
         <source src="audio/Drifting.ogg" type="audio/ogg">  <!-- Fallback audio -->
     </audio>
-    <hr>
+    <br style="line-height: 4;">
 
     <!-- TEXT FORMATTING -->
     <h2>Text Formatting</h2>
@@ -66,8 +70,8 @@
         <sub>Subscript</sub> text &ltsub&gt | <sup>Superscript</sup> text &ltsup&gt |
         <tt>Monospaced</tt> text &lttt&gt |
         <mark style="background-color: rgb(0, 255, 0);">Marked</mark> text &ltmark&gt
-    </p>
-    <hr>
+    </p> 
+    <br>
 
     <!-- LISTS -->
     <h2>Lists</h2>
@@ -94,5 +98,40 @@
 
     <h3 style="margin-bottom: 5px;">Description list</h3>
     <h4 style="margin-top: 0px;">(List with terms and descriptions)</h4>
+
+    <dl style="padding-left: 0px;">
+        <dt>Term 1</dt>
+        <dd style="margin-left: 30px;">Here is a description of term 1...</dd>
+        <dt>Term 2</dt>
+        <dd style="margin-left: 30px">Here is a description of term 2...</dd>
+        <dt>Term 3</dt>
+        <dd style="margin-left: 30px;">Here is a description of term 3 blah, blah, blah, yada yada...</dd>
+    </dl>
+    <br>
     
+    <!-- TABLES -->
+    <h2>Tables</h2>
+
+    <table border="0" style="background-color: black; border-radius: 5px;">
+        <tr align="center" style="background-color:antiquewhite;">
+            <th width="100">Monday</th>
+            <th width="100">Tuesday</th>
+            <th width="100">Wednesday</th>
+            <th width="100">Thursday</th>
+            <th width="100">Friday</th>
+            <th width="100">Saturday</th>
+            <th width="100">Sunday</th>
+        </tr>
+        <tr align="center" style="background-color:rgb(255, 250, 246)">
+            <td width="100">9-5</td>
+            <td width="100">9-5</td>
+            <td width="100">9-5</td>
+            <td width="100">9-5</td>
+            <td width="100">9-5</td>
+            <td width="100">10-3</td>
+            <td width="100">Closed</td>
+        </tr>
+    </table>
+    <br>
+
 </body>
