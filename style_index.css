@@ -1,3 +1,8 @@
+@font-face{
+    src: url(fonts/Hermit-Regular.otf);
+    font-family: Hermit;
+}
+
 *{
-    font-family: 'Roboto', sans-serif, Arial;
+    font-family: 'Roboto', sans-serif, 'Hermit', 'Arial';
 }
