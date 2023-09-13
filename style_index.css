@@ -1,3 +1,17 @@
+/*
+COLOR PALETTE
+Black   #292828
+Gray    #5a524c
+Red     #ea6962
+Green   #a9b665
+Yellow  #d8a657
+Blue    #7daea3
+Magenta #d3869b
+Cyan    #89b482
+White   #d4be98
+White-Lighter #d2c3a7
+*/
+
 @font-face{
     src: url(fonts/Hermit-Regular.otf);
     font-family: Hermit;
@@ -6,3 +20,53 @@
 *{
     font-family: 'Roboto', sans-serif, 'Hermit', 'Arial';
 }
+
+h1, h2{ color: #ea6962 }
+
+h3, h4{ color: #d3869b }
+
+.text, p, ul, ol, dl, label{ color: #d4b398 }
+
+table{
+    background-color: #d8a657;
+    border: solid #d8a657;
+    border-radius: 5px;
+    border-width: 5px
+}
+
+#trTop{
+    color: #292828;
+}
+
+#trBottom{
+    color: #292828;
+    background-color: #89b482;
+}
+
+a:link{ color: #a9b665 }
+
+a:visited{ color: #89b482 }
+
+button{
+    font-size: 25px;
+    background-color: #7daea3;
+    color: #292828;
+    border: #00000000;
+    border-radius: 30px;
+    padding: 8px;
+}
+
+header{
+    background-color: #d2c3a7;
+    border-bottom: solid #7daea3;
+    border-radius: 15px;
+    border-width: 5px;
+}
+
+#headerTitle{
+    color: #292828;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+body{ background-color: #292828; }

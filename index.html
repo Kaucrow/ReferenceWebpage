@@ -12,8 +12,8 @@
     <title>Reference Webpage</title>
 </head>
 <body>
-    <header style="background-color: antiquewhite; border-bottom: solid; border-radius: 15px;">
-        <h1 style="padding-left: 30px; padding-top: 30px">Reference Webpage</h1>
+    <header>
+        <h1 id="headerTitle">Reference Webpage</h1>
     </header>
     <!-- Use <pre></pre> for preformatted text. For unformatted text, use <p></p> -->
 
@@ -70,7 +70,7 @@
         <big>Big</big> text &ltbig&gt | <small>Small</small> text &ltsmall&gt |
         <sub>Subscript</sub> text &ltsub&gt | <sup>Superscript</sup> text &ltsup&gt |
         <tt>Monospaced</tt> text &lttt&gt |
-        <mark style="background-color: rgb(0, 255, 0);">Marked</mark> text &ltmark&gt
+        <mark style="background-color: #d8a657;">Marked</mark> text &ltmark&gt
     </p> 
     <br>
 
@@ -113,8 +113,8 @@
     <!-- TABLES -->
     <h2>Tables</h2>
 
-    <table border="0" style="background-color: black; border-radius: 5px;">
-        <tr align="center" style="background-color:antiquewhite;">
+    <table border="0">
+        <tr align="center" id="trTop">
             <th width="100">Monday</th>
             <th width="100">Tuesday</th>
             <th width="100">Wednesday</th>
@@ -123,7 +123,7 @@
             <th width="100">Saturday</th>
             <th width="100">Sunday</th>
         </tr>
-        <tr align="center" style="background-color:rgb(255, 250, 246)">
+        <tr align="center" id="trBottom">
             <td width="100">9-5</td>
             <td width="100">9-5</td>
             <td width="100">9-5</td>
@@ -139,12 +139,7 @@
     <h2>Buttons</h2>
 
     <a href="https://www.archlinux.org" target="_blank">
-        <button style="
-        font-size: 25px;
-        background-color: antiquewhite;
-        color: rgb(71, 71, 71); border-radius: 20px;">
-            Click Me
-        </button>
+        <button>Click Me</button>
     </a>
     <br><br><br>
 
@@ -204,7 +199,7 @@
         <br><br>
 
         <label for="file">File:</label>
-        <input type="file" id="file" accept="image/png, image/jpeg">
+        <input type="file" id="file" accept="image/png, image/jpeg" style="color: #a9b665; font-weight: bold;">
         <br><br>
 
         <input type="reset">
