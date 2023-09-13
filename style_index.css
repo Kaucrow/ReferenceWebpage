@@ -29,9 +29,8 @@ h3, h4{ color: #d3869b }
 
 table{
     background-color: #d8a657;
-    border: solid #d8a657;
+    border: 5px solid #d8a657;
     border-radius: 5px;
-    border-width: 5px
 }
 
 #trTop{
