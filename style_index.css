@@ -25,7 +25,7 @@ h1, h2{ color: #ea6962 }
 
 h3, h4{ color: #d3869b }
 
-.text, p, ul, ol, dl, label{ color: #d4b398 }
+.text, p, ul, ol, dl, label, hr{ color: #d4b398 }
 
 table{
     background-color: #d8a657;
@@ -53,6 +53,24 @@ button{
     border: #00000000;
     border-radius: 30px;
     padding: 8px;
+}
+
+#shadowText{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+    color: #d8a657;
+    margin-left: 100px;
+    text-shadow: 15px 8px 2px #d3869b, -15px -8px 2px #89b482;
+}
+
+#shadowBox{
+    width: 100px;
+    height: 100px;
+    background-color: #7daea3;
+    border-radius: 10px;
+    margin-left: 125px;
+    box-shadow: 5px 5px 8px #89b482;
 }
 
 header{
