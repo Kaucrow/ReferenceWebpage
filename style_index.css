@@ -183,6 +183,34 @@ a:active{
     background-color: #5a524c;
 }
 
+.dropdown{
+    display: inline-block;
+    margin-bottom: 150px;
+    margin-left: 20px;
+}
+
+.dropdown button{ border-radius: 10%; }
+
+.dropdown a{
+    display: block;
+    color: #d4b398;
+    padding: 10px 20px;
+}
+
+.dropdown .content{
+    border-radius: 10%;
+    display: none;
+    position: absolute;
+    background-color: #5a524c;
+    box-shadow: 5px 5px 2px hsla(0, 0%, 8%, 0.5);
+}
+
+.dropdown:hover .content{ display: block; }
+
+.dropdown:hover button{ background-color: #89b482; }
+
+.dropdown a:hover{ background-color: #453f3b; }
+
 header{
     background-color: #d2c3a7;
     border-bottom: solid #7daea3;
