@@ -42,10 +42,6 @@ table{
     background-color: #89b482;
 }
 
-a:link{ color: #a9b665 }
-
-a:visited{ color: #89b482 }
-
 button{
     font-size: 25px;
     background-color: #7daea3;
@@ -124,6 +120,67 @@ button{
 
 button:hover{
     cursor: pointer;
+}
+
+a{ text-decoration: none; }
+
+a:link{ color: #a9b665 }
+
+a:visited{ color: #89b482 }
+
+a:hover{ color: #d8a657; }
+
+a:active{
+    color: #d8a657;
+    font-size: 1.1em;
+}
+
+#pseudo a{
+    display: block;
+}
+
+#pseudo a::first-letter{
+    font-size: 2em;
+    font-style: italic;
+}
+
+#pseudo p::first-line, #pseudo p::selection{
+    color: #292828;
+    background-color: #d8a657;
+}
+
+#pseudo li::before{
+    content: '👌';    
+}
+
+#pseudo li::after{
+    content: '😎'; 
+}
+
+#pseudo li::marker{
+    content: '✔';
+}
+
+.pagination a:visited{ color: #a9b665; }
+.pagination a:hover{ color: #d8a657; }
+.pagination a:active{
+    color : #d8a657;
+    font-size: 1em;
+}
+
+.pagination a{
+    padding: 20px 25px;
+    margin: 10px;
+    border-radius: 25%;
+}
+
+.pagination a.active{
+    background-color: #ea6962;
+    font-weight: bold;
+}
+
+.pagination a:hover:not(.active){
+    background-color: #5a524c;
 }
 
 header{

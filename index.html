@@ -11,7 +11,7 @@
     <link rel="icon" type="image/png" href="favicons/Kaucrow.png">
     <title>Reference Webpage</title>
 </head>
-<body id="body">
+<body>
     <header>
         <h1 id="headerTitle">Reference Webpage</h1>
     </header>
@@ -275,19 +275,52 @@
 
     <button onclick="ToggleBackground()" style="font-size: 18px;">Toggle Background Image</button>
     <script>
-        var body = document.getElementById("body");
         function ToggleBackground(){
-            if(body.style.backgroundImage == "none"){ body.style.backgroundImage = "url(images/GruvboxBG.png)"; }
-            else{ body.style.backgroundImage = "none"; }
+            if(document.body.style.backgroundImage == "none"){ document.body.style.backgroundImage = "url(images/GruvboxBG.png)"; }
+            else{ document.body.style.backgroundImage = "none"; }
         }
     </script>
     <br><br><br>
+    
+    <!-- PSEUDO-CLASSES & PSEUDO-ELEMENTS -->
+    <h2>Pseudo-Classes & Pseudo-Elements</h2>
+
+    <div id="pseudo">
+        <a href="https://forum.arduino.cc/" title="Arduino Forum" target="_blank">Arduino Forum</a>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, fuga dolor. Maiores iste accusantium, iure delectus consequatur nostrum et ab facilis eveniet magni vel iusto quae quasi perferendis earum architecto!</p>
+        <ul>
+            <li>First</li>
+            <li>Second</li>
+            <li>Third</li>
+        </ul>
+    </div>
+    <br>
+
+    <!-- PAGINATION -->
+    <h2>Pagination</h2><br>
+
+    <div class="pagination">
+        <a href=""><</a>
+        <a href="index.html" class="active">1</a>
+        <a href="other_pages/page2.html">2</a>
+        <a href="other_pages/page3.html">3</a>
+        <a href="other_pages/page4.html">4</a>
+        <a href="other_pages/page5.html">5</a>
+        <a href="other_pages/page2.html">></a>
+    </div>
+    <br><br><br>
+    
+    <!-- DROPDOWN MENUS -->
+    <h2>Dropdown Menus</h2><br>
+
+    <div class="dropdown">
+
+    </div>
 
     <footer>
         <div style="height: 3px; background-color: #d4be98; border-radius: 10px;"></div>
         <br>
-        <a href="https://github.com/Kaucrow/ReferenceWebpage" style="
-        text-decoration: none;">
+        <a href="https://github.com/Kaucrow/ReferenceWebpage">
             View on GitHub
         </a>
         <br><br>

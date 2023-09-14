@@ -1,0 +1,62 @@
+@font-face{
+    src: url(fonts/Hermit-Regular.otf);
+    font-family: Hermit;
+}
+
+*{
+    font-family: 'Roboto', sans-serif, 'Hermit', 'Arial';
+}
+
+h1, h2{ color: #ea6962 }
+
+h3, h4{ color: #d3869b }
+
+.text, p, ul, ol, dl, label, hr{ color: #d4b398 }
+
+table{
+    background-color: #d8a657;
+    border: 5px solid #d8a657;
+    border-radius: 5px;
+}
+
+a{ text-decoration: none; }
+a:link{ color: #a9b665; }
+a:visited{ color: #89b482; }
+
+.pagination a:link{ color: #a9b665; }
+.pagination a:visited{ color: #a9b665; }
+.pagination a:hover{ color: #d8a657; }
+.pagination a:active{
+    color : #d8a657;
+    font-size: 1em;
+}
+
+.pagination a{
+    padding: 20px 25px;
+    margin: 10px;
+    border-radius: 25%;
+}
+
+.pagination a.active{
+    background-color: #ea6962;
+    font-weight: bold;
+}
+
+.pagination a:hover:not(.active){
+    background-color: #5a524c;
+}
+
+body{ background-color: #292828; }
+
+header{
+    background-color: #d2c3a7;
+    border-bottom: solid #7daea3;
+    border-radius: 15px;
+    border-width: 5px;
+}
+
+#headerTitle{
+    color: #292828;
+    padding-left: 30px;
+    padding-top: 30px;
+}
