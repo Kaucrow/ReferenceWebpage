@@ -109,25 +109,21 @@ button{
     font-size: 1.1em;
 }
 
-#box1.overflowBox{
-    overflow: visible;
-}
+#box1.overflowBox{ overflow: visible; }
 
-#box2.overflowBox{
-    overflow: hidden;
-}
+#box2.overflowBox{ overflow: hidden; }
 
 #box3.overflowBox{
     overflow: clip;
     overflow-clip-margin: 15px;
 }
 
-#box4.overflowBox{
-    overflow: scroll; 
-}
+#box4.overflowBox{ overflow: scroll; }
 
-#box5.overflowBox{
-    overflow: auto; 
+#box5.overflowBox{ overflow: auto; }
+
+button:hover{
+    cursor: pointer;
 }
 
 header{
@@ -143,19 +139,11 @@ header{
     padding-top: 30px;
 }
 
-body{ background-color: #292828; }
-
-header{
-    background-color: #d2c3a7;
-    border-bottom: solid #7daea3;
-    border-radius: 15px;
-    border-width: 5px;
+body{
+    background-color: #292828;
+    background-image: none;     /* for BG image, use url(IMAGE_PATH) */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
 }
-
-#headerTitle{
-    color: #292828;
-    padding-left: 30px;
-    padding-top: 30px;
-}
-
-body{ background-color: #292828; }

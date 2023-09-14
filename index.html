@@ -11,7 +11,7 @@
     <link rel="icon" type="image/png" href="favicons/Kaucrow.png">
     <title>Reference Webpage</title>
 </head>
-<body>
+<body id="body">
     <header>
         <h1 id="headerTitle">Reference Webpage</h1>
     </header>
@@ -268,7 +268,20 @@
     </div>
 
     <!-- Put a static div past all right and left floating elements -->
-    <div style="clear: both"></div>
+    <div style="clear: both;"></div>
+
+    <!-- BACKGROUND IMAGE -->
+    <h2 style="margin-top: 0px;">Background Image</h2>
+
+    <button onclick="ToggleBackground()" style="font-size: 18px;">Toggle Background Image</button>
+    <script>
+        var body = document.getElementById("body");
+        function ToggleBackground(){
+            if(body.style.backgroundImage == "none"){ body.style.backgroundImage = "url(images/GruvboxBG.png)"; }
+            else{ body.style.backgroundImage = "none"; }
+        }
+    </script>
+    <br><br><br>
 
     <footer>
         <div style="height: 3px; background-color: #d4be98; border-radius: 10px;"></div>
