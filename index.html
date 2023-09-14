@@ -10,11 +10,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="favicons/Kaucrow.png">
     <title>Reference Webpage</title>
+    <script src="https://kit.fontawesome.com/ce9213978e.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <h1 id="headerTitle">Reference Webpage</h1>
     </header>
+
+    <!-- SEMANTIC TAGS -->
+    <!--
+        <header>    = introductory content
+        <nav>       = navigation bar, links
+        <main>      = main content (section, aside, article)
+        <section>   = dependent content
+        <aside>     = side content
+        <article>   = independent content
+        <footer>    = closing content
+    -->
+
     <!-- Use <pre></pre> for preformatted text. For unformatted text, use <p></p> -->
 
     <!-- HYPERLINKS -->
@@ -282,6 +295,69 @@
     </script>
     <br><br><br>
     
+    <!-- COMBINATORS -->
+    <!--
+          = descendant
+        > = child
+        ~ = general sibling
+        + = adjacent sibling
+    -->
+    <h2>Combinators</h2>
+
+    <div id="combinator1" class="combinatorEx">
+        <h3 class="combinatorExTitle">' ' Combinator</h3>
+        <div id="container">
+            <p>Container Child 1</p>
+            <p>Container Child 2</p>
+            <div id="innerContainer">
+                <p>Inner Container Child 1</p>
+            </div>
+        </div>
+        <p style="padding-left: 35px;">External &ltp&gt 1</p>
+        <p style="padding-left: 35px;">External &ltp&gt 2</p>
+    </div>
+    
+    <div id="combinator2" class="combinatorEx">
+        <h3 class="combinatorExTitle">'>' Combinator</h3>
+        <div id="container">
+            <p>Container Child 1</p>
+            <p>Container Child 2</p>
+            <div id="innerContainer">
+                <p>Inner Container Child 1</p>
+            </div>
+        </div>
+        <p style="padding-left: 35px;">External &ltp&gt 1</p>
+        <p style="padding-left: 35px;">External &ltp&gt 2</p>
+    </div>
+
+    <div id="combinator3" class="combinatorEx">
+        <h3 class="combinatorExTitle">'~' Combinator</h3>
+        <div id="container">
+            <p>Container Child 1</p>
+            <p>Container Child 2</p>
+            <div id="innerContainer">
+                <p>Inner Container Child 1</p>
+            </div>
+        </div>
+        <p style="padding-left: 35px;">External &ltp&gt 1</p>
+        <p style="padding-left: 35px;">External &ltp&gt 2</p>
+    </div>
+    
+    <div id="combinator4" class="combinatorEx">
+        <h3 class="combinatorExTitle">'+' Combinator</h3>
+        <div id="container">
+            <p>Container Child 1</p>
+            <p>Container Child 2</p>
+            <div id="innerContainer">
+                <p>Inner Container Child 1</p>
+            </div>
+        </div>
+        <p style="padding-left: 35px;">External &ltp&gt 1</p>
+        <p style="padding-left: 35px;">External &ltp&gt 2</p>
+    </div>
+
+    <br><br>
+
     <!-- PSEUDO-CLASSES & PSEUDO-ELEMENTS -->
     <h2>Pseudo-Classes & Pseudo-Elements</h2>
 
@@ -320,13 +396,14 @@
             <a href="">Orange</a>
             <a href="">Banana</a>
         </div>
-    </div>
+    </div> 
 
     <footer>
         <div style="height: 3px; background-color: #d4be98; border-radius: 10px;"></div>
         <br>
         <a href="https://github.com/Kaucrow/ReferenceWebpage">
             View on GitHub
+            <i class="fa-brands fa-github"></i>
         </a>
         <br><br>
     </footer>

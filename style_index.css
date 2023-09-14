@@ -211,6 +211,43 @@ a:active{
 
 .dropdown a:hover{ background-color: #453f3b; }
 
+.combinatorEx{
+    display: inline-block;
+    margin: 0px 15px;
+}
+
+.combinatorExTitle{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#container{
+    box-sizing: border-box;
+    width: 250px;
+    padding: 0px 30px;
+    border: 5px solid #5a524c;
+}
+
+#combinator1 #container p{
+    color:#292828;
+    background-color: #d8a657;
+}
+
+#combinator2 #container>p{
+    color:#292828;
+    background-color: #d8a657;
+}
+
+#combinator3 #container~p{
+    color: #292828;
+    background-color: #d8a657;
+}
+
+#combinator4 #container+p{
+    color: #292828;
+    background-color: #d8a657;
+}
+
 header{
     background-color: #d2c3a7;
     border-bottom: solid #7daea3;
