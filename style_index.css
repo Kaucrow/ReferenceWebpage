@@ -89,6 +89,62 @@ button{
     margin-top: 2%;
 }
 
+.overflowBox{
+    max-width: 200px;
+    max-height: 100px;
+    padding: 0px 30px;
+    margin-left: 20px;
+    margin-bottom: 80px;
+    border: 5px solid;
+    float: left;
+}
+
+.overflowTitle{
+    overflow: visible;
+    width: 300px;
+    height: 30px;
+    text-align: center;
+    color: #d3869b;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+#box1.overflowBox{
+    overflow: visible;
+}
+
+#box2.overflowBox{
+    overflow: hidden;
+}
+
+#box3.overflowBox{
+    overflow: clip;
+    overflow-clip-margin: 15px;
+}
+
+#box4.overflowBox{
+    overflow: scroll; 
+}
+
+#box5.overflowBox{
+    overflow: auto; 
+}
+
+header{
+    background-color: #d2c3a7;
+    border-bottom: solid #7daea3;
+    border-radius: 15px;
+    border-width: 5px;
+}
+
+#headerTitle{
+    color: #292828;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+body{ background-color: #292828; }
+
 header{
     background-color: #d2c3a7;
     border-bottom: solid #7daea3;
