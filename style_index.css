@@ -281,6 +281,69 @@ a:active{
 
 .container #box4{ background-color: #89b482; }
 
+.transformations #box1{
+    width: 150px;
+    height: 150px;
+    font-size: 5em;
+    line-height: 150px;
+    text-align: center;
+    border: 5px solid #5a524c;
+    border-radius: 0%;
+    margin: 40px 60px;
+    background-color: #a9b665;
+
+    /*transform: translateX(-50px);
+    transform: translateY(100%);
+    transform: translate(50px, 50px);
+
+    transform: rotateX(45deg);
+    transform: rotateY(180deg);
+    transform: rotateZ(45deg);
+    transform: rotateX(45deg) rotateZ(45deg);
+
+    transform: scaleX(2);
+    transform: scaleY(3);
+    transform: scale(2, 2);
+
+    transform: skewX(45deg);
+    transform: skewY(45deg);*/
+    transform: skew(10deg, 10deg);
+}
+
+#easingToolLink{ font-size: 1.1em; }
+
+.animations #box1{
+    width: 150px;
+    height: 150px;
+    font-size: 5em;
+    line-height: 150px;
+    text-align: center;
+    border: 5px solid #5a524c;
+    border-radius: 10%;
+    margin: 40px 60px;
+    background-color: #7daea3;
+    
+    animation-name: dance;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(1.000, -0.600, 0.000, 1.650);
+    /*animation-play-state: paused;
+    animation-direction: reverse;
+    animation-direction: alternate;*/
+}
+
+@keyframes slideLeft{
+    from{ transform: translateX(300%); }
+}
+
+@keyframes slideRight{
+    to{ transform: translateX(300%); }
+}
+
+@keyframes dance{
+    50%{ transform: translateX(300%); }
+}
+
 header{
     background-color: #d2c3a7;
     border-bottom: solid #7daea3;
